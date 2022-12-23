@@ -1,0 +1,9 @@
+volumes
+mount/app/Django/tech/__pycache__
+mount/app/Django/tech/migrations
+mount/app/Django/mysite/__pycache__
+.DS_Store
+password.md
+.vscode
+settings_local.py
+db/1.sql

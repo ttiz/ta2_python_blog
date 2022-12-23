@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+
+  db:
+    container_name: postgres_local
+    build: ./db
+    ports:
+      - 5433:5432
+    # 内部向けなのでDB情報は直書きでOKとする
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: hogehoge
+      POSTGRES_DB: blog
+    volumes:
+      - ./volumes/db-store:/var/lib/postgresql/data
+
+  web:
+    image: nginx
+    container_name: NGINX_local
+    ports:
+    - "80:80"
+    volumes:
+    - ./mount/web/conf/:/etc/nginx/conf.d
+    - ./mount/web/uwsgi_params:/etc/nginx/uwsgi_params
+    - ./mount/app/Django/static:/static
+    depends_on:
+      - app
+
+  app:
+    container_name: Django_local
+    build: ./app
+    volumes:
+    - ./mount/app:/code    
+    expose:
+      - "8001"
+    depends_on:
+      - db
+    entrypoint: >
+      sh -c "sh /code/container-init.sh" 
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'tech/index_v1_1.css' %}" />
+    <link rel="stylesheet" href="{% static 'tech/highlight.css'%}" />
+    <link rel="stylesheet" href="{% static 'tech/bootstrap.css' %}" />
+    <script src="{% static 'tech/highlight.js'%}"></script>
+</head>
+
+
+
+<body class="flex flex-col min-h-screen">
+
+    <header>
+        <a href="http://localhost/" class="title_logo">
+            <img src="{% static 'tech/logo.jpg'%}" alt="ロゴ" height="29px" />
+        </a>
+    </header>
+    <main>
+    <div class="app">
+        <nav>
+            <div class="left_sidebar">
+                <!-- 左サイドバー -->
+            </div>
+        </nav>
+        <nav>
+            <div class="right_sidebar">
+                <!-- 右サイドバー -->
+            </div>
+        </nav>
+        <div class="content">
+            {% block article_list %}
+            {% endblock %}
+
+            {% block article_detail %}
+            {% endblock %}
+        </div>
+    </div>
+    </main>
+    <div class="footer_margin"></div>
+    <footer class="fixed-bottom">
+    </footer>
+</body>
+
+</html>

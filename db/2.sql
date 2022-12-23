@@ -1,0 +1,3 @@
+-- 以下のようなSQLをシステム開始時に自動実行
+-- create role admin login password 'hogehuga';
+-- create database blog;
