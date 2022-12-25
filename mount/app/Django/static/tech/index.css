@@ -2,8 +2,8 @@
   position: relative;
   left: 200px;
   width: 600px;
-  height: 300px;
-  border: 1px solid #000000;
+  height: 30px;
+  /* border: 1px solid #000000; */
   margin-bottom: 1.9em;
 }
 
@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-
+  background-color:rgba(243, 171, 37, 0.24)
 }
 
 .div_article {

@@ -2,7 +2,8 @@
 {% block article_list %}
     {% for article in object_list %}
     <div class="div_link">
-      <a class ="a_link" href="{% url 'article_detail' pk=article.pk %}">{{ article.title }}</a>
+      <a class ="a_link" href="{% url 'article_detail' pk=article.pk %}"></a>
+      {{ article.title }}
     </div>
     {% endfor %}
 {% endblock %}
