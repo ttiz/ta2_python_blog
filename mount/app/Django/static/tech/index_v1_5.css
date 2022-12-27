@@ -71,18 +71,6 @@
   height: 3em;
 }
 
-/* 
-本場環境でadobeのフォントを入れる場合は有効にする
-html {
-  visibility: hidden;
-}
-
-html.wf-active,
-html.loading-delay {
-  visibility: visible;
-} 
- */
-
 header {
   background-color: rgba(241, 182, 55, 1);
   height: 29px;
