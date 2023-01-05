@@ -1,6 +1,10 @@
 <!-- myapp/templates/myapp/article_detail.html -->
 {% extends "tech/base.html" %}
 
+{% block head_title %}
+{{ object.title }} | たつきち忍法帖
+{% endblock %}
+
 {% block article_detail %}
 <script>hljs.initHighlightingOnLoad();</script>
   <div class="div_article">
