@@ -11,6 +11,9 @@ class Article(models.Model):
     is_public = models.BooleanField(default=True)
     publish_date = models.DateField(default=timezone.now)
 
+    class Meta:
+        ordering = ["-publish_date"]
+
     def __str__(self):
         return self.title
 
