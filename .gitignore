@@ -7,3 +7,4 @@ password.md
 .vscode
 settings_local.py
 db/1.sql
+mount/app/Django/social/__pycache__
