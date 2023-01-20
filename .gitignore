@@ -8,3 +8,4 @@ password.md
 settings_local.py
 db/1.sql
 mount/app/Django/social/__pycache__
+mount/app/Django/social/migrations
