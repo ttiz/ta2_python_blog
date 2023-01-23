@@ -1,0 +1,13 @@
+{% extends "social/base.html" %}
+{% block head_title %}
+記事一覧 | たつきち忍法帖
+{% endblock %}
+{% block article_list %}
+    {% for article in object_list %}
+    <div class="div_link">
+      <a class ="a_link" href="{% url 'article_detail' pk=article.pk %}"></a>
+      {{ article.title }}
+    </div>
+    {% endfor %}
+{% endblock %}
+

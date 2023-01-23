@@ -1,0 +1,14 @@
+<!-- myapp/templates/myapp/article_detail.html -->
+{% extends "social/base.html" %}
+
+{% block head_title %}
+{{ object.title }} | たつきち忍法帖
+{% endblock %}
+
+{% block article_detail %}
+<script>hljs.initHighlightingOnLoad();</script>
+  <div class="div_article">
+  <h1>{{ object.title }}</h1>
+  {{ object.markdown_to_html|safe }}
+  </div>
+{% endblock %}
