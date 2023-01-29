@@ -7,15 +7,17 @@
     <title>{% block head_title %}トップページ | ブログ{% endblock %}</title>
     <script src="{% static 'common/highlight.js'%}"></script>
 
-    <link rel="stylesheet" href="{% static 'tech/index_v1_5.css' %}" />
     <link rel="stylesheet" href="{% static 'common/highlight.css'%}" />
     <link rel="stylesheet" href="{% static 'common/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'tech/index_v1_6.css' %}" />
     
 </head>
 
 
 
 <body class="flex flex-col min-h-screen">
+<div class="container">
+<div class="row">
 
     <header>
         <a href="http://localhost/" class="title_logo">
@@ -46,6 +48,8 @@
     <div class="footer_margin"></div>
     <footer class="fixed-bottom">
     </footer>
+</div>
+</div>
 </body>
 
 </html>
