@@ -1,9 +1,13 @@
 html{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 3.2rem;
+}
+
+h2{
+  font-size: 2.8rem;
 }
 
 .div_link {
@@ -62,12 +66,7 @@ h1{
      */
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  font-size: 2.1rem;
-}
+
 
 /* .app {
   width: 100vw;
@@ -104,3 +103,33 @@ footer {
   font-family: a-otf-ud-shin-go-pr6n;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width:330px){
+  .content {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width:380px){
+  .content {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width:430px){
+  .content {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width:770px){
+  .content {
+    font-size: 1.35rem;
+  }
+}
