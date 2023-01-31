@@ -8,6 +8,7 @@ h1{
 
 h2{
   font-size: 2.8rem;
+  background-color:rgba(243, 171, 37, 0.24)
 }
 
 .div_link {
@@ -110,26 +111,42 @@ footer {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width:330px){
+@media screen and (min-width:300px){
   .content {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
+  }
+
+  h2{
+    font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width:380px){
+@media screen and (min-width:380px){
   .content {
     font-size: 1.7rem;
   }
-}
 
-@media screen and (max-width:430px){
-  .content {
-    font-size: 1.5rem;
+  h2{
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width:770px){
+@media screen and (min-width:430px){
+  .content {
+    font-size: 1.5rem;
+  }
+
+  h2{
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width:770px){
   .content {
     font-size: 1.35rem;
+  }
+
+  h2{
+    font-size: 2.8rem;
   }
 }
