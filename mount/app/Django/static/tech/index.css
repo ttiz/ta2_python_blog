@@ -108,12 +108,11 @@ footer {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  font-size: 1.3rem;
 }
 
 @media screen and (min-width:300px){
   .content {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
   }
 
   h2{
@@ -123,7 +122,17 @@ footer {
 
 @media screen and (min-width:380px){
   .content {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+  }
+
+  h2{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width:430px){
+  .content {
+    font-size: 1.35rem;
   }
 
   h2{
@@ -131,22 +140,51 @@ footer {
   }
 }
 
-@media screen and (min-width:430px){
+@media screen and (min-width:770px){
+  .content {
+    font-size: 1.4rem;
+  }
+
+  h2{
+    font-size: 2.05rem;
+  }
+}
+
+@media screen and (min-width:999px){
   .content {
     font-size: 1.5rem;
   }
 
   h2{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 }
 
-@media screen and (min-width:770px){
+@media screen and (min-width:1400px){
   .content {
-    font-size: 1.35rem;
+    font-size: 1.65rem;
   }
 
   h2{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width:1900px){
+  .content {
+    font-size: 1.75rem;
+  }
+
+  h2{
+    font-size: 2.45rem;
+  }
+}
+
+@media screen and (min-width:2500px){
+  .content {
+    font-size: 2.2rem;
+  }
+
+  h2{
+    font-size: 3.3rem;
   }
 }
