@@ -1,5 +1,10 @@
+asgiref==3.6.0
+backports.zoneinfo==0.2.1
 Django == 4.1.1
-psycopg2
-uWSGI
 django-hosts == 5.1
+importlib-metadata==6.0.0
 markdown == 3.4.1
+psycopg2==2.9.5
+sqlparse==0.4.3
+uWSGI==2.0.21
+zipp==3.11.0
