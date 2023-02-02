@@ -25,18 +25,18 @@
             <img src="{% static 'tech/logo.jpg'%}" alt="ロゴ" height="29px" />
         </a>
     </header>
+    <div class="wrapper">
     <main>
     <div class="app">
-        <nav>
-            <div class="left_sidebar">
-                <!-- 左サイドバー -->
-            </div>
-        </nav>
-        <nav>
-            <div class="right_sidebar">
-                <!-- 右サイドバー -->
-            </div>
-        </nav>
+<!--        <nav class="col-3 col-sm-12">-->
+<!--            <div class="left_sidebar">-->
+<!--                &lt;!&ndash; 左サイドバー &ndash;&gt;-->
+<!--                <p>左サイドバー</p>-->
+<!--            </div>-->
+<!--        </nav>-->
+<!--        <nav class="col-3 col-sm-12">-->
+
+<!--        </nav>-->
         <div class="content">
             {% block article_list %}
             {% endblock %}
@@ -46,6 +46,10 @@
         </div>
     </div>
     </main>
+    <aside>
+        <section>右サイドバー</section>
+    </aside>
+    </div>
     <div class="footer_margin"></div>
     <footer class="fixed-bottom">
     </footer>

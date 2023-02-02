@@ -11,6 +11,24 @@ h2{
   background-color:rgba(243, 171, 37, 0.24)
 }
 
+.wrapper {
+  display: flex;
+  max-width: 1600px;
+  min-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main {
+  flex: 1;
+  margin: 0 20px;
+  padding-bottom: 10em;
+}
+
+aside {
+ width: 220px;
+}
+
 .div_link {
   position: relative;
   left: 200px;
@@ -91,10 +109,6 @@ body {
   font-family: a-otf-ud-shin-go-pr6n;
   display: flex;
   flex-direction: column;
-}
-
-main {
-  padding-bottom: 10em;
 }
 
 footer {
