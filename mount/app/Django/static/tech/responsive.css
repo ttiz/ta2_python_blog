@@ -1,0 +1,199 @@
+@media screen and (min-width: 300px) {
+    .content {
+        font-size: 1.45rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .content {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .content {
+        font-size: 1.35rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .content {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 2.05rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 999px) {
+    .content {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .content {
+        font-size: 1.65rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .content {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 2.45rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .content {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 3.3rem;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}

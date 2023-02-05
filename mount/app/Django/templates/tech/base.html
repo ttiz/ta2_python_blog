@@ -6,54 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block head_title %}トップページ | ブログ{% endblock %}</title>
-    <script src="{% static 'common/highlight.js'%}"></script>
+    <script src="{% static 'common/highlight.js' %}"></script>
 
-    <link rel="stylesheet" href="{% static 'common/highlight.css'%}" />
-    <link rel="stylesheet" href="{% static 'common/bootstrap.css' %}" />
-    <link rel="stylesheet" href="{% static 'tech/index_v1_6.css' %}" />
-    
+    <link rel="stylesheet" href="{% static 'common/highlight.css' %}"/>
+    <link rel="stylesheet" href="{% static 'common/bootstrap.css' %}"/>
+    <link rel="stylesheet" href="{% static 'tech/index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'tech/dom.css' %}"/>
+    <link rel="stylesheet" href="{% static 'tech/responsive.css' %}"/>
+
 </head>
-
 
 
 <body class="flex flex-col min-h-screen">
 <div class="container">
-<div class="row">
+    <div class="row">
 
-    <header>
-        <a href="http://localhost/" class="title_logo">
-            <img src="{% static 'tech/logo.jpg'%}" alt="ロゴ" height="29px" />
-        </a>
-    </header>
-    <div class="wrapper">
-    <main>
-    <div class="app">
-<!--        <nav class="col-3 col-sm-12">-->
-<!--            <div class="left_sidebar">-->
-<!--                &lt;!&ndash; 左サイドバー &ndash;&gt;-->
-<!--                <p>左サイドバー</p>-->
-<!--            </div>-->
-<!--        </nav>-->
-<!--        <nav class="col-3 col-sm-12">-->
+        <header>
+            <a href="http://localhost/" class="title_logo">
+                <img src="{% static 'tech/logo.jpg' %}" alt="ロゴ" height="29px"/>
+            </a>
+        </header>
+        <div class="wrapper">
+            <main>
+                <div>
+                    <div class="content">
+                        {% block article_list %}
+                        {% endblock %}
 
-<!--        </nav>-->
-        <div class="content">
-            {% block article_list %}
-            {% endblock %}
-
-            {% block article_detail %}
-            {% endblock %}
+                        {% block article_detail %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <section>右サイドバー</section>
+            </aside>
         </div>
+        <div class="footer_margin"></div>
+        <footer class="fixed-bottom">
+        </footer>
     </div>
-    </main>
-    <aside>
-        <section>右サイドバー</section>
-    </aside>
-    </div>
-    <div class="footer_margin"></div>
-    <footer class="fixed-bottom">
-    </footer>
-</div>
 </div>
 </body>
 
