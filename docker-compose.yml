@@ -24,6 +24,7 @@ services:
     - ./mount/web/conf/:/etc/nginx/conf.d
     - ./mount/web/uwsgi_params:/etc/nginx/uwsgi_params
     - ./mount/app/Django/static:/static
+    - ./mount/ads:/usr/share/nginx/html
     depends_on:
       - app
 
