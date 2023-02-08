@@ -1,7 +1,5 @@
 .wrapper {
     display: flex;
-    max-width: 1600px;
-    min-width: 980px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -9,21 +7,22 @@
 .div_link {
     position: relative;
     /*left: 200px;*/
-    width: 600px;
-    height: 30px;
+    /*width: 600px;*/
+    /*height: 30px;*/
     /* border: 1px solid #000000; */
     margin-bottom: 1.9em;
+    background-color: rgba(243, 171, 37, 0.24)
 }
 
-.div_link .a_link {
+.a_link {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(243, 171, 37, 0.24)
 }
+
 
 .div_article {
     left: 10%;
